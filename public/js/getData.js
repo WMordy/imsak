@@ -108,7 +108,7 @@ var getDate = async () => {
         document.getElementById("arab-year").innerText = hijri.year
     
         let douaaSection = document.getElementById("douaa-title")
-        douaaSection.innerText = numDay[Number.parseInt(hijri.day)-1]
+        douaaSection.innerText = numDay[Number.parseInt(hijri.day)-1] + " "+`دعاء اليوم`
 
         document.getElementById("en-day").innerText = gregorian.day
         document.getElementById("en-mounth").innerText = arMonths[Number.parseInt(hijri.month.number)+1] 
