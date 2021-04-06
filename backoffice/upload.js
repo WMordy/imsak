@@ -3,7 +3,8 @@
 
 var sendVideo = ()=>{
     let video = (document.getElementById("exampleInputEmail1")).value
-    fetch("/videos", {
+    console.log(video)
+    fetch("/video", {
       
     // Adding method type
     method: "POST",
@@ -16,7 +17,7 @@ var sendVideo = ()=>{
       
     // Adding headers to the request
     headers: {
-        "Content-type": "application/json; charset=UTF-8"
+        "Content-type": "application/json"
     }
 })
     document.getElementById("exampleInputEmail1").value = ""
