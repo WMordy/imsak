@@ -4,7 +4,7 @@ var getDouaa = async () => {
     
    
     let douaaBody = document.getElementById("douaa-body")
-    douaaBody.innerText = data.douaa[0]
+    douaaBody.innerText = data.douaa
 }
 
 var getVideo = async () => {
