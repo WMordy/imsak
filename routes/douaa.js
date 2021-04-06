@@ -1,17 +1,25 @@
 const express = require("express");
 const router = express.Router();
-
+var db = require("../database/db.config")
+app.use(express.json())
 router.get("/",(req,res)=>{
-    let day = `
+    db.query("SELECT body FROM douaa", function (err, result) {
+        id = result[0].video
+       // console.log(id)
+       let day = `
     اليوم السابع عشر
     `
-    let douaa =`اللهم اجعلْ في قلبي نورًا، وفي سمعي نورًا، وعن يميني نورًا، وعن يساري نورًا، وفوقي نورًا، وتحتي نورًا، وأمامي نورًا، وخلفي نورًا، وأعظِمْ لي نورًا اللهم اجعلْ لي نورًا في قلبي، واجعلْ لي نورًا في سمعي، واجعلْ لي نورًا في بصري، واجعلْ لي نورًا عن يميني، ونورًا عن شمالي، واجعلْ لي نورًا من بين يديَّ، ونورًا من خلفي، وزِدْني نورًا، وزِدْني نورًا، وزِدْني نورًا
-
-   `
+    let douaa =result[0].body
+   
     res.json({
         "day": day,
         "douaa" : douaa
     })
+       
+        if (err) throw err;
+        console.log("1 record inserted");
+      }); 
+    
 })
 
 router.post("/:day",(req,res)=>{
