@@ -6,7 +6,8 @@ router.get("/",(req,res)=>{
     let link = "https://www.youtube.com/watch?v=ZQkBmCJG9i8"
     let id  = ""
     db.query("SELECT video FROM videos", function (err, result) {
-        id = result[0].video
+        
+        id = result[result.length -1].video
        // console.log(id)
         let final = "https://www.youtube.com/embed/" + id
         res.json({
