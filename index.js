@@ -4,7 +4,7 @@ app = express()
 PORT = 26990
 
 app.use("/",express.static(path.join(__dirname, "/public")));
-app.use("/backoffice",express.static(path.join(__dirname, "/public")));
+app.use("/backoffice",express.static(path.join(__dirname, "/backoffice")));
 
 app.use("/date",require("./routes/dates"))
 
