@@ -11,7 +11,7 @@ router.get("/",(req,res)=>{
     `
     var today = new Date();
     var dd = String(today.getDate()).padStart(2, '0');
-    let douaa =result[Number.parseInt(dd)].body
+    let douaa =result[Number.parseInt(dd) % 30].body
    
     res.json({
         "day": day,
