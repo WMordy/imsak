@@ -15,7 +15,7 @@ router.get("/",(req,res)=>{
    
     res.json({
         "day": day,
-        "douaa" : douaa
+        "douaa" : result.body
     })
        
         if (err) throw err;

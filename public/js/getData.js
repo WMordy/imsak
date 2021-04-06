@@ -1,11 +1,11 @@
 var getDouaa = async () => {
     let resp = await fetch("/douaa")
-    let data = await resp.json()
-
+    let data2 = await resp.json()
+    
     let douaaSection = document.getElementById("douaa-title")
     douaaSection.innerText = data.day
     let douaaBody = document.getElementById("douaa-body")
-    douaaBody.innerText = data.douaa
+    douaaBody.innerText = data.douaa[0]
 }
 
 var getVideo = async () => {
