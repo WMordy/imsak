@@ -1,6 +1,6 @@
 var getDouaa = async () => {
     let resp = await fetch("/douaa")
-    let data2 = await resp.json()
+    let data = await resp.json()
     
    
     let douaaBody = document.getElementById("douaa-body")
