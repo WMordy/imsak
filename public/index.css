@@ -62,16 +62,22 @@ html, body {
 	background-repeat:no-repeat;
     background-image: url("./imgs/03.png");
 }
+.wtsp{
+    color: rgb(55, 163, 60);
+}
 
+.fb{
+    color: rgb(55, 62, 163);
+}
 .date-hijri{
     background-color: rgb(45, 99, 247);
-    margin-right: 45%;
+    margin-left: -5%;
     margin-top: -10%;
     border:3px solid #2ece45;
 }
 .date-miladi{
     margin-top: -10%;
-    
+    margin-left: 2%;
     background-color:  rgb(45, 99, 247);
     border:3px solid #2ece45;
 }
@@ -419,5 +425,6 @@ frame{
          background-image: url("./imgs/03.png"); */
 
     }
+    
 
 }

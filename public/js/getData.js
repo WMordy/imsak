@@ -18,8 +18,8 @@ var getVideo = async () => {
 }
 
 var DaySet = false
-var cities = ["makkaa",
-    "Medina",
+var cities = ["Makkah",
+    "Madinah",
     "Riyadh",
     "Buraydah",
     "Dammam",
@@ -96,7 +96,7 @@ var numDay = [
 ]
 var getDate = async () => {
     for(var i = 0 ; i < cities.length ; i++){
-        let apiMsg = await fetch("https://api.aladhan.com/v1/timingsByAddress?address="+cities[i])
+        let apiMsg = await fetch("https://api.aladhan.com/v1/timingsByAddress?address="+cities[i]+"&method=8")
         let response = await apiMsg.json()
         let timing = response.data.timings
         if(!DaySet){
@@ -111,7 +111,7 @@ var getDate = async () => {
         douaaSection.innerText = " "+`دعاء اليوم `+ numDay[Number.parseInt(hijri.day)-1]  
 
         document.getElementById("en-day").innerText = gregorian.day
-        document.getElementById("en-mounth").innerText = arMonths[Number.parseInt(hijri.month.number)+1] 
+        document.getElementById("en-mounth").innerText = arMonths[Number.parseInt(gregorian.month.number)-1] 
         document.getElementById("en-mounth-en").innerText = gregorian.month.en
         document.getElementById("en-year").innerText = gregorian.year
             DaySet = true
