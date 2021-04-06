@@ -9,7 +9,9 @@ router.get("/",(req,res)=>{
        let day = `
     اليوم السابع عشر
     `
-    let douaa =result[0].body
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    let douaa =result[Number.parseInt(dd)-1].body
    
     res.json({
         "day": day,
