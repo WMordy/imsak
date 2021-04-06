@@ -4,7 +4,7 @@
  dbConn = mysql.createConnection({
      host: 'localhost',
      user: 'root',
-     password: '',  
+     password: 'rootroot',  
      database: 'imsak'
  });
  dbConn.connect(function (err) {
