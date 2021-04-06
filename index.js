@@ -3,7 +3,8 @@ const path = require("path");
 app = express()
 PORT = 26990
 
-app.use(express.static(path.join(__dirname, "/public")));
+app.use("/",express.static(path.join(__dirname, "/public")));
+app.use("/backoffice",express.static(path.join(__dirname, "/public")));
 
 app.use("/date",require("./routes/dates"))
 
