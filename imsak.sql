@@ -1,74 +1,124 @@
--- MySQL dump 10.13  Distrib 8.0.23, for Linux (x86_64)
+-- phpMyAdmin SQL Dump
+-- version 5.2.0-dev
+-- https://www.phpmyadmin.net/
 --
--- Host: localhost    Database: imsak
--- ------------------------------------------------------
--- Server version	8.0.23-0ubuntu0.20.10.1
+-- Host: 192.168.30.23
+-- Generation Time: Apr 06, 2021 at 03:29 PM
+-- Server version: 8.0.18
+-- PHP Version: 7.4.14
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!50503 SET NAMES utf8mb4 */;
-/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
-/*!40103 SET TIME_ZONE='+00:00' */;
-/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `imsak`
+--
+
+-- --------------------------------------------------------
 
 --
 -- Table structure for table `douaa`
 --
 
-DROP TABLE IF EXISTS `douaa`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `douaa` (
-  `douaa_id` int NOT NULL AUTO_INCREMENT,
-  `body` varchar(1200) NOT NULL,
-  PRIMARY KEY (`douaa_id`)
+  `douaa_id` int(11) NOT NULL,
+  `body` varchar(1200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Dumping data for table `douaa`
 --
 
-LOCK TABLES `douaa` WRITE;
-/*!40000 ALTER TABLE `douaa` DISABLE KEYS */;
-/*!40000 ALTER TABLE `douaa` ENABLE KEYS */;
-UNLOCK TABLES;
+INSERT INTO `douaa` (`douaa_id`, `body`) VALUES
+(1, 'اللهم لك الحمد أنت قيم السموات والأرض ومن فيهن، ولك الحمد لك ملك السموات والأرض ومن فيهن، ولك الحمد أنت نور السموات والأرض ومن فيهن، ولك الحمد أنت ملك السموات والأرض، ولك الحمد أنت الحق ووعدك الحق، ولقاؤك احق، وقولك ، والجنة حق، والنار حق، والنبيون حق، محمد ﷺ حق، والساعه ، اللهم لك أسلمت، وبك آمنت، وعليك توكلت، وإليك أنبت، وبك خاصمت، وإليك حاكمت، فاغفر لي ما قدمت وما أخرت، وما أسررت وما أعلنت، أنت المقدم، وأنت المؤخر، لا إله إلا أنت'),
+(2, 'اللهم رب جبرائيل، وميكائيل، وإسرافيل، فاطر السماوات والأرض، عالم الغيب والشهادة، أنت تحكم بين عبادك فيما كانوا فيه يختلفون، اهدني لما اختلف فيه من الحق بإذنك، إنك تهدي من تشاء إلى صراط مستقيم'),
+(3, 'اللهم رب السماوات و و الأرض ورب العرش العظيم، ربنا ورب كل شيء، فالق الحب ومنزل التوراة والإنجيل والفرقان، أعوذ بك من شر كل شيء انت آخذ بناصيته، اللهم أنت الأول فليس قبلك شيء، وأنت الآخر فليس بعدك شيء، وأنت الظاهر فليس فوقك شيء، وأنت الباطن فليس دونك شيء، اقض عنا الدين، وأغننا من الفقر.'),
+(4, 'وجهت وجهي للذي فطر السماوات والأرض حنيفا، وما أنا من المشركين، إن صلاتي، ونسكي، ومحياي ومماتي لله رب العالمين، لا شريك له، وبذلك أمرت وأنا من المسلمين، اللهم أنت الملك لا إله إلا أنت، أنت ربي، وأنا عبدك، ظلمت نفسي، واعترفت بذنبي، فاغفزلي ذنوبي جميعا، إنه لا يغفر الذنوب إلا أنت، واهدني لأحسن الأخلاق لا يهدي لأحسنها إلا أنت، واصرف عني سيئها لا يصرف عني سيئها إلا أنت، لبيك وسعديك والخير كله في يديك، والشر ليس إليك، أنا بك وإليك، تبارك وتعاليت، أستغفرك وأتوب إليك'),
+(5, 'اللهم أنت ربي لا إله إلا أنت، خلقتني وأنا عبدك، وأنا على عهدك و ووعدك ما استطعت، أعوذ بك من شر ما صنعت، أبوء لك بنعمتك علي، وأبوء لك بذنبي فاغفر لي، فإنه لا يغفر النوب إلا أنت'),
+(6, 'اللهم إني أسألك يا الله الواحد الأحد الصمد، الذي لم يلد ولم يولد، ولم ي له كفوا أحد، أن تغفرلي ذنوبي إنك أنت الغفور الرحيم'),
+(7, ' اللهم إني ظلمت نفسي ظلما كثيرا ، ولا يغفر الذنوب إلا أنت، فاغفر لي مغفرة من عندك، وارحمني، إنك أنت الغفور الرحيم '),
+(8, 'اللهم اغفر لي خطيئتي وجهلي، وإسرافي في أمري، وما أنت أعلم يه مني، اللهم اغفر لي هزلي وجدي، وخطاياي وعمدي، وكل ذلك عندي اللهم اغفرلي ما قدمت وما أخرت وما أسررت وما أعلنت، أنت المقدم وأنت المؤخر، وأنت على كل شيء قدير'),
+(9, ' اللهم اغفر لي، وارحمني، واهدني، وعافني، وارزقني'),
+(10, ' اللهم اغفرلي ذنبي كله دقه وجله، واوله وآخره ، وعلانيته وسره'),
+(11, 'اللهم اغفر لي ذنبي، وأخسيء شيطاني، و فك رهاني، واجعلني في الندي الأعلى.'),
+(12, 'اللهم مصرف القلوب صرف قلويا على طاعتك '),
+(13, 'يامقلب القلوب ثبت قلبي على دينك'),
+(14, 'للهم إني أسألك الهدى والسداد '),
+(15, 'اللهم إني أسألك الهدى، والتقى، والعفاف، والغنى'),
+(16, 'اللهم أصلح لي ديني الذي هو عصمه أمري، وأصلح لي دنياي التي فيها معاشي، وأصلح لي آخرتي التي فيها معادي، واجعل الحياة زيادة لي في كل خير واجعل الموت راحة لي من كل شر'),
+(17, ' اللهم إني أسألك الثبات في الأمر، والعزيمة على الرشد، وأسألك شكر نعمتك، وأسألك حسن عبادتك، وأسألك قلبا سليما، ولسانا صادقا، وأسألك من خيرما تعلم، وأعوذ بك من شر ما تعلم، وأستغفرك لما تعلم، إنك أنت علام الغيوب'),
+(18, 'اللهم ربنا آتنا في الدنيا حسنة، وفي الآخرة حسنة، وقنا عذاب النار'),
+(19, 'اللهم اجعل في قلبي نورا، وفي بصري نورا، وفي سمعي نورا ، وعن يميني نورا، وعن يساري نورا، وفوقي نورا، وتحتي نورا ، وأمامي نورا، وخلفي نورا، واجعل لي نورا'),
+(20, 'اللهم علمني الكتاب والحكمة وفقهني في الدين'),
+(21, 'اللهم أكثر مالي، وولدي، وبارك لي فيه'),
+(22, 'اللهم إني أسألك الفردوس الأعلى'),
+(23, 'اللهم إني أسألك العافية في الدنيا والآخرة، اللهم إني أسألك العفو والعافية في ديني ودنياي وأهلي ومالي، اللهم استر عوراتي، وآمن روعاتي، اللهم احفظني من بين يدي ، ومن خلفي، وعن يميني، وعن شمالي، ومن فوقي، وأعوذ بعظمتك أن أغتال من تحتي.'),
+(24, 'ربي أمني ولا تعن علي، وانصرني ولا تنصر علي، وامكرلي ولا تمكر علي، واهدني ويسر الهدى إلي، وانصرني على من بغى علي، رب اجعلني لك شكارا ، لك ذكارا للك رهابا لك مطواعا، إليك مخبتا، لك أواها منيبا، رب تقبل توبتي، واغسل حوبتي، وأجب دعوتي، وثبت حجتي، واهد قلبي و لساني، واسلل سخيمة قلبي'),
+(25, 'اللهم أعني على ذكرك، وشكرك وحسن عبادتك'),
+(26, 'يا حي يا قيوم برحمتك أستغيث، أصلح لي شأني كله، ولا تكلني إلى نفسي طرفة عين'),
+(27, 'لا إله إلا أنت سبحانك إني كنت من الظالمين'),
+(28, 'اللهم اني اعوذ بك من شر ماعملت ومن شر مالم أعمل'),
+(29, 'اللهم اني اعوذ بك من الفتن ماظهر منها وما بطن'),
+(30, 'اللهم اعوذ بك من عذاب جهنم ومن عذاب القبر ومن فتنة المحيا والممات ومن شر فتنة المسيح الدجال ');
+
+-- --------------------------------------------------------
 
 --
 -- Table structure for table `videos`
 --
 
-DROP TABLE IF EXISTS `videos`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `videos` (
-  `vid_id` int NOT NULL AUTO_INCREMENT,
-  `video` varchar(100) NOT NULL,
-  PRIMARY KEY (`vid_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
+  `vid_id` int(11) NOT NULL,
+  `video` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `videos`
 --
 
-LOCK TABLES `videos` WRITE;
-/*!40000 ALTER TABLE `videos` DISABLE KEYS */;
-INSERT INTO `videos` VALUES (1,'5qap5aO4i9A');
-/*!40000 ALTER TABLE `videos` ENABLE KEYS */;
-UNLOCK TABLES;
-/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+INSERT INTO `videos` (`vid_id`, `video`) VALUES
+(1, '5qap5aO4i9A');
 
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
-/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `douaa`
+--
+ALTER TABLE `douaa`
+  ADD PRIMARY KEY (`douaa_id`);
+
+--
+-- Indexes for table `videos`
+--
+ALTER TABLE `videos`
+  ADD PRIMARY KEY (`vid_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `douaa`
+--
+ALTER TABLE `douaa`
+  MODIFY `douaa_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+
+--
+-- AUTO_INCREMENT for table `videos`
+--
+ALTER TABLE `videos`
+  MODIFY `vid_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
-
--- Dump completed on 2021-04-06 11:55:02
