@@ -11,11 +11,11 @@ router.get("/",(req,res)=>{
     `
     var today = new Date();
     var dd = String(today.getDate()).padStart(2, '0');
-    let douaa =result[Number.parseInt(dd)-1].body
+    let douaa =result[Number.parseInt(dd)].body
    
     res.json({
         "day": day,
-        "douaa" : result.body
+        "douaa" : douaa
     })
        
         if (err) throw err;
