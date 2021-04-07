@@ -409,13 +409,20 @@ frame{
         font-size: 0.65em;
         color: white;
     }
+    td,th{
+        font-size: 1em;
+        
+    }
+    #sallaa-title{
+        font-size: 3em;
+    }
 
     .salla2-holder{
         background-size: cover;
        padding-bottom: 0%;
         top:70%;
-        margin-left: 50%;
-        margin-top: -20%;
+       /*  margin-left: 50%; */
+        margin-top: -40%;
         left: 0px;
         right: 0px;
         background-position-x: center;
