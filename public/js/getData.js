@@ -11,7 +11,7 @@ var getVideo = async () => {
     let resp = await fetch("/video")
     let data = await resp.json()
     let frame = document.getElementById("ytb-frame")
-    frame.innerHTML = `<iframe  width="90%" height="280"  src="${data.link}"
+    frame.innerHTML = `<iframe  width="90%" height="380"  src="${data.link}"
     title="YouTube video player" frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen></iframe>  `

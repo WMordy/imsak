@@ -428,3 +428,80 @@ frame{
     
 
 }
+
+@media only screen and (min-width: 1921px)  {
+    html, body {
+        width: 100%;
+        overflow-y: hidden; 
+       /*  overflow-x: visible; */
+        /* overflow-x: hidden; */
+       
+      
+    }
+    #maaloma{
+        font-size: 8em;
+    }
+    .embed-responsive{
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        height: 0;
+        overflow: hidden;
+    }
+    frame{
+       
+        width: 100%;
+       
+    }
+    .logo{
+        
+        width:140%;
+        padding-top: 10% !important;
+        padding-right: 30%; 
+    }
+    .douaa-img{
+       
+        width: 100%;
+    }
+    .douaa p {
+        font-size: 3em;
+    }
+    .douaa h5{
+        font-size: 5em;
+    }
+    .date-hijri{
+        
+        margin-right: 45%;
+    }
+
+    .date-hijri p, .date-miladi p{
+        font-size: 3em;
+        color: white;
+    }
+
+    .salla2-holder{
+        background-size: cover;
+       padding-bottom: 9%;
+        top:70%;
+        margin-left: 0%;
+        margin-top: -25%;
+        left: 0px;
+        right: 0px;
+        background-position-x: center;
+    
+       
+     /*    padding-top: -22vh; */
+      /*   height: 190vh;
+         width: 80vh; 
+         
+         background-size: cover;
+         background-repeat:no-repeat;
+         background-image: url("./imgs/03.png"); */
+
+    }
+    td,th{
+        font-size: 2.1em;
+        padding: auto;
+    }
+    
+
+}
