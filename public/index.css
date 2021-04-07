@@ -19,6 +19,7 @@ html, body {
 }
 #sallaa-title{
     color: white;
+    font-size: 2em;
 }
 #maaloma{
     color: rgb(45, 99, 247);
@@ -501,8 +502,11 @@ frame{
 
     }
     td,th{
-        font-size: 2.1em;
-        padding: auto;
+        font-size: 2.4em;
+        
+    }
+    #sallaa-title{
+        font-size: 4em;
     }
     
 
