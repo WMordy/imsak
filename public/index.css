@@ -220,8 +220,9 @@ frame{
     }
     .logo{
         
-        width:140%;
-        padding-right: 30%; 
+        width:350px;
+     height: 100px;
+        margin-left: -4vh; 
     }
     .douaa-img{
        
@@ -303,6 +304,7 @@ frame{
     .logo{
         
         width:140%;
+       
         padding-right: 30%; 
     }
     .douaa-img{
