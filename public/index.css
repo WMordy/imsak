@@ -191,7 +191,9 @@ frame{
   transform: translate(-50%, -50%);
 }
 
-
+.douaa-body{
+    font-size: 0.01em !important;
+}
 @media only screen and (min-width: 321px) and (max-width: 680px) {
     html, body {
         width: 100%;
@@ -410,10 +412,10 @@ frame{
 
     .salla2-holder{
         background-size: cover;
-       padding-bottom: 30%;
+       padding-bottom: 0%;
         top:70%;
-        margin-left: 0%;
-        margin-top: -40%;
+        margin-left: 50%;
+        margin-top: -20%;
         left: 0px;
         right: 0px;
         background-position-x: center;
@@ -466,10 +468,10 @@ frame{
         width: 100%;
     }
     .douaa p {
-        font-size: 3em;
+        font-size: 2em;
     }
     .douaa h5{
-        font-size: 5em;
+        font-size: 3.5em;
     }
     .date-hijri{
         
